@@ -1,0 +1,132 @@
+@import url('./contact.css');
+@import url('./project.css');
+@import url('./main2.css');
+@import url('./media.css');
+
+/*project section*/
+.project {
+    background-image: url("../img/dark_dot-services.jpg");
+    padding-block: 100px;
+    padding-inline: 50px;
+
+
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.project .title h3 {
+    color: #fff;
+    position: absolute;
+}
+
+.project .title h2 {
+    color: #222;
+}
+
+.project p {
+    color: white;
+    text-align: center;
+}
+
+.project-item {
+    position: relative;
+    padding: 55px;
+    background-color: white;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.project .project-item:hover h3:after {
+    width: 30%;
+}
+
+.project-item h3 {
+    text-transform: capitalize;
+}
+
+.project .project-item h3:after {
+    content: ' ';
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: width 1s;
+    width: 10%;
+    height: 3px;
+    background-color: var(--main-color);
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+    -webkit-transition: width 1s;
+    -moz-transition: width 1s;
+    -ms-transition: width 1s;
+    -o-transition: width 1s;
+}
+
+.project .project-item .icon {
+    background-color: #000;
+    position: absolute;
+    left: 50%;
+    top: -26px;
+    transform: translate(-50%, 0);
+    border: 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.project-item:hover .icon {
+    background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.pro-img {
+    margin-top: 10%;
+}
+
+.pro-img img {
+    width: 320px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.link-box {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.link-btn {
+    display: block;
+    padding: 15px;
+    color: #000;
+    border: 2px solid var(--main-color);
+    font-weight: 500;
+}
+
+.link-btn:hover {
+    color: white;
+    background-color: var(--main-color);
+}
