@@ -1,36 +1,121 @@
-@media screen and (min-width: 768px) and (max-width: 1200px){
-    
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+
     .projects-grid {
         grid-template-columns: 1fr 1fr;
     }
 
-    
+    .blog {
+        flex-direction: column;
+    }
+    .project-item {
+        padding: 6px;
+        margin-top: 61px;
+    }
+    .header{
+        height: 100vh;
+
+    }
+
+
+
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width :300px) and (max-width: 800px) {
     .name {
         font-size: 20px;
     }
+
     .navbar {
         flex-direction: column;
         display: flex;
     }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    navbar{
+
+    navbar {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .contact-form-grid{
-        display: unset!important;
-       
+
+    .header .con {
+        flex-direction: column;
+        width: 100%;
     }
-    .services-grid {
-        grid-template-columns: 1fr;
-    } 
-    .input{
-        padding: 0;
+
+    .header-content {
+        width: 100%;
+
+        text-align: center;
     }
+    .social-media {
+     margin: auto;        
+    }
+
+    .contact-form-grid {
+        display: unset !important;
+
+    }
+    .services{
+        margin-top: 150px;
+    }
+    .services .services-grid {
+        display: unset;
+        
+    }
+   
+
+    .input-head input{
+        padding: 1px;
+        height: 25px;
+ 
+    }
+    .left-sec{
+        width: 100%;
+    }
+    .blog {
+        flex-direction: column;
+    }
+    .project .project-item h3:after {
+        top: 67px;
+    }
+    .project-item h3{
+        margin-top: 23px;
+    }
+    .project-item {
+        padding: 6px;
+        margin-top: 61px;
+    }
+    .project{
+        padding-inline: 33px;
+        margin-top: 150px;
+    }
+    .item-main-image {
+        width: 350px;
+        height: 340px;
+
+      
+    }
+    .main-item{
+        padding-top: 10px;
+    }
+    .loader{
+        width: 400px;
+        height: 373px;
+        top: 15px;
+
+    }
+    .contact-form-content {
+     margin-top: 170px;
+    }
+    .contact-form.container{
+        width: 100%;
+    margin: auto;
+    
+    padding-inline: 50px;
+    }
+    
+
 }

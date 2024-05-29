@@ -1,6 +1,7 @@
 @import url('./contact.css');
 @import url('./project.css');
 @import url('./media.css');
+@import url('./blog.css');
 
 :root {
     --main-color: #F9A826;
@@ -22,6 +23,8 @@ navbar {
     position: fixed;
     width: 100%;
     z-index: 200;
+    height: 60px;
+
 
 }
 
@@ -53,18 +56,10 @@ ul li a:hover {
 }
 
 /*header section*/
-.header {
-    background-image: url("../img/bg_osaka.jpg");
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-}
-
 .header-content h1 {
     text-transform: uppercase;
 
 }
-
 
 .header .con {
     display: flex;
@@ -72,21 +67,17 @@ ul li a:hover {
     height: 100%;
     width: 75%;
     margin: auto;
-
 }
-
 .header-content {
     line-height: 3rem;
-
+    padding-top: 150px;
 }
-
 .social-media {
     margin-top: 1rem;
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
-
 .icon {
     border: 1px solid;
     border-radius: 50%;
@@ -94,18 +85,14 @@ ul li a:hover {
     justify-content: center;
     align-items: center;
 }
-
 .view-link {
     color: var(--main-color);
 }
-
 .icon {
     width: 3rem;
     height: 3rem;
     transition-duration: 1s;
-
 }
-
 .icon:hover {
     background-color: var(--main-color);
 }
@@ -152,15 +139,16 @@ ul li a:hover {
 
 .left-sec {
     width: 50%;
+
 }
 
 .main-item {
     width: 400px;
     height: 400px;
     display: flex;
-    padding-bottom: 60px;
     position: relative;
     margin: auto;
+
 }
 
 .item-main-img {
